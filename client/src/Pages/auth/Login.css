@@ -1,0 +1,11 @@
+@media screen and (max-width: 425px) {
+ .container >.card {
+    width: 90vw;
+  }
+}
+
+@media (min-width: 700px) {
+  .container> .card {
+    width: 30vw;
+  }
+}

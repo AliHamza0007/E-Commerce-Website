@@ -1,0 +1,14 @@
+li {
+  padding: 0px 10px;
+}
+.nav-link {
+  padding: 5px 20px;
+}
+.nav-link:hover {
+  background: #e2e0e0;
+  padding: 5px 15px;
+  border-radius: 10px;
+}
+.active {
+  border-bottom: 1px solid black !important;
+}

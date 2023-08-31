@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.116940c3.css",
+    "main.js": "/static/js/main.30912a5e.js",
+    "static/media/babygirl.jpg": "/static/media/babygirl.cc076eb23decc219ec4f.jpg",
+    "static/media/1.png": "/static/media/1.db067562ca0242d11926.png",
+    "static/media/2.png": "/static/media/2.09e98590655973d739c1.png",
+    "static/media/girl.jpg": "/static/media/girl.2051abfe56c460a3ecec.jpg",
+    "static/media/3.png": "/static/media/3.ece7cab877cbb56bc653.png",
+    "static/media/mens.jpg": "/static/media/mens.ca03bdd98848e10e1daa.jpg",
+    "static/media/img3.jpg": "/static/media/img3.545f772a63be3b2f3f14.jpg",
+    "static/media/img2.avif": "/static/media/img2.b0263022c47db60b2cd2.avif",
+    "static/media/delivery (2).jpg": "/static/media/delivery (2).1978ef309df430cb9323.jpg",
+    "static/media/img3.avif": "/static/media/img3.127525fbdb495fd698ff.avif",
+    "static/media/img1.avif": "/static/media/img1.70b983ca58ea6c98022a.avif",
+    "index.html": "/index.html",
+    "main.116940c3.css.map": "/static/css/main.116940c3.css.map",
+    "main.30912a5e.js.map": "/static/js/main.30912a5e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.116940c3.css",
+    "static/js/main.30912a5e.js"
+  ]
+}
