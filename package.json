@@ -5,17 +5,10 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-<<<<<<< HEAD
 
-    "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
- 
-  },
-
-=======
+  
        "start": "node index.js"
   },
->>>>>>> 4e88b830d0f2ebfa727c10cdf52fe0a723b5a6f1
   "keywords": [],
   "author": "ConfortZone",
   "license": "ISC",
