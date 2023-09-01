@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Layout from "../../components/Layout/Layout";
 import { useAuth } from "../../context/auth";
 import { toast } from "react-hot-toast";
@@ -9,14 +9,14 @@ import { addItemToCart, removeItemFromCart } from "../../cartStore/cartActions";
 import CartOrderTotal from "./CartOrderTotal";
 const Cart = () => {
   const navigate = useNavigate();
-  const [count, setCount] = useState(3);
   const [auth] = useAuth();
+  const [count, setCount] = React.useState(5);
   const dispatch = useDispatch();
   const { cartItems } = useSelector((state) => state.cart);
   //remove cart_item form
   const removeCartItemHandler = (id) => {
     dispatch(removeItemFromCart(id));
-toast.error("Item Removed")
+    toast.error("Item Removed");
   };
   //increase quantity of productItem
   const increaseQty = (id, quantity) => {
@@ -36,24 +36,17 @@ toast.error("Item Removed")
   //redirecting when no item in cart
   if (cartItems?.length === 0) {
     setTimeout(() => {
-      navigate(`/`);
+      navigate(`/products`);
     }, 5000);
   }
-
-  useEffect(() => {
+  React.useEffect(() => {
     if (cartItems?.length === 0) {
       setTimeout(() => {
-        setCount((pre) => --pre);
+        setCount((pre) => pre - 1);
       }, 1000);
-
-      if (count === 0) {
-        navigate(`/`);
-      }
     }
-
     //eslint-disable-next-line
   }, [count]);
-
   return (
     <Layout>
       <div className="container-fluid pb-5  pt-3">
@@ -165,7 +158,10 @@ toast.error("Item Removed")
               <div className="col mt-2 pb-5 text-center">
                 <div
                   className="text-center btn btn-outline-danger m-1 px-2"
-                  onClick={() => navigate("/")}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    navigate("/products");
+                  }}
                 >
                   Hi buddy Fill Cart
                 </div>

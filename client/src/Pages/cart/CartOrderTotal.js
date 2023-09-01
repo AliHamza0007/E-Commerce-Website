@@ -18,7 +18,9 @@ const CartOrderTotal = () => {
     let confirm = window.confirm("Please Confirm Order");
     if (confirm) {
       PlaceOrder();
-      RemoveCart();
+      setTimeout(() => {
+        RemoveCart();
+      }, 5000);
     }
   };
 
@@ -47,15 +49,13 @@ const CartOrderTotal = () => {
     if (result?.success) {
       toast.success(result?.message);
       setTimeout(() => {
-        
-        toast.success("Order is In Process");
-      }, 2000);
-
-      navigate("/dashboard/user/orders");
+        toast.success("Order is In Process You Can See In Orders Page");
+      }, 4000);
     }
   };
 
   const RemoveCart = () => {
+
     dispatch(clearCart());
   };
   return (

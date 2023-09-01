@@ -2,6 +2,7 @@ li {
   padding: 0px 10px;
   cursor: pointer !important;
 }
+
 .nav-link {
   padding: 5px 20px;
 }
@@ -13,4 +14,12 @@ li {
 }
 .active {
   border-bottom: 1px solid black !important;
+}
+li:hover {
+  cursor: pointer !important;
+  background: #e2e0e0;
+}
+ul li .navlink {
+  cursor: pointer !important;
+  background: #e2e0e0;
 }
