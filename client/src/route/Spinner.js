@@ -4,7 +4,7 @@ import { useNavigate, useLocation } from "react-router-dom";
 const Spinner = ({ path = "/login" }) => {
   const navigate = useNavigate();
   const Location = useLocation();
-  const [count, setCount] = useState(1);
+  const [count, setCount] = useState(3);
   useEffect(() => {
     const interval = setInterval(() => {
       setCount((pre) => --pre);
