@@ -1,4 +1,4 @@
 .env
-clients
+client/node_modules
 node_modules
 Security.txt

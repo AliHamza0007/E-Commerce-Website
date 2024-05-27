@@ -2,7 +2,8 @@ import React, { useEffect, useState } from "react";
 import {
   useParams,
   useNavigate,
-  unstable_HistoryRouter,
+useLocation
+  
 } from "react-router-dom";
 import Layout from "../components/Layout/Layout";
 import AddToCart from "./cart/AddToCart";
@@ -12,7 +13,6 @@ const ProductDetails = () => {
   const [similarProduct, setSimilarProduct] = useState([]);
   const navigate = useNavigate();
   const params = useParams();
-  const history = unstable_HistoryRouter();
   async function getProduct() {
     let result = await fetch(
       `${process.env.REACT_APP_API}/api/v1/product/single-product/${params.slug}`,
@@ -71,7 +71,7 @@ const ProductDetails = () => {
               <AddToCart id={product._id} />
               <button
                 className="btn  text-center mx-3 btn-secondary px-3"
-                onClick={() => history.goBack()}
+                onClick={() => navigate(-1)}
               >
                 Go Back
               </button>
